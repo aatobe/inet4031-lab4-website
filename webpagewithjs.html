@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Interactive Lightbulb - Abdurahman Tobe</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h2 {
+            color: rgb(242, 241, 237);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
 <body>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
-
-<p>JavaScript can change HTML attribute values.</p>
-
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
+    <h2>Welcome, Abdurahman!</h2>
+    <p>Click the buttons below to turn the lightbulb on or off.</p>
+    
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    
 </body>
 </html>
